@@ -7,10 +7,11 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname + '/public')));
+
 
 //routes
-app.get('/',(req,res) => {
+
+app.get('/api/whoami',(req,res) => {
 
   var lang = req.acceptsLanguages()
   var ip = req.ip;
