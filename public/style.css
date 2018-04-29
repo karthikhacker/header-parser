@@ -1,0 +1,8 @@
+.container{
+  margin: 0 auto;
+}
+
+.container h2, p{
+  text-align: center;
+  color: #666;
+}
